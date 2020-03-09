@@ -1,0 +1,2 @@
+class RegistryCallbackController < ApplicationController
+end
