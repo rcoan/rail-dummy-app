@@ -1,6 +1,6 @@
 class ZapayCallbackController < ApplicationController
   def success
-    File.open("request-#{Time.now}.json", 'w') { |f|
+    File.open("request-logs/request-#{Time.now}.json", 'w') { |f|
       f.write params.to_json
     }
 
