@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   post '/v1/registry-callback', to: "registry_callback#success"
   get '/v1/registry-callback', to: "registry_callback#success"
 
+
+  post '/v1/zapay-callback', to: "zapay_callback#success"
+  get '/v1/zapay-callback', to: "zapay_callback#success"
 end
